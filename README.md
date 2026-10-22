@@ -134,6 +134,12 @@ If your cases contain only vertebra masks (for example SuPreM vertebrae predicti
 - No new dependencies, CPU only.
 - On the AbdomenAtlasDemo warm-up cases (SuPreM vertebrae predictions), the refined masks reached
   a mean DSC of 92.6% in the demo task evaluation.
+- In the updated five-dataset benchmark (663 scans total), DAVIR had the highest combined
+  vertebra Dice and shortest runtime on all five datasets: combined Dice ranged from 0.912 to
+  0.953, with 2–95 seconds per scan. Its mean per-vertebra Dice was highest on CSI 2014
+  (0.848) and VerSe 2019 (0.861); ShapeKit Default led on xVertSeg and VerSe 2020, and raw
+  SuPreM led on CTSpine1K. Full per-dataset comparisons and changed-scan counts are in the
+  [DAVIR README](https://github.com/Nikhil-Rao20/ShapeKit-DAVIR#five-dataset-benchmark-comparison).
 - Quick check: `python -m pytest tests/test_vertebrae_davir.py`
 - Standalone version and method details, with more experiments: [ShapeKit-DAVIR](https://github.com/Nikhil-Rao20/ShapeKit-DAVIR)
 
